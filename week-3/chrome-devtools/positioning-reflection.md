@@ -1,3 +1,6 @@
+imgs/"Chrome-Devtools 3.1"
+
+
 1. How can you use Chrome's DevTools inspector to help you format or position elements?
   -Using DevTools allows you to format and position elements in the browser. Devtools allows you to fix layout issues and optimize code in real time.
 
