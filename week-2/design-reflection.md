@@ -23,3 +23,4 @@ What is user experience design and why is it valuable?
 
 Which parts of the challenge did you find tedious?
 -The parts I find challenging are still command line/git related. I get stuck on how to push my site or itegrate my file into the command line. I know what my goal is but I seem to get stuck on these little things that frustrate me.
+
