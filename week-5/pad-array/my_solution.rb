@@ -1,8 +1,8 @@
 # Pad an Array
 
-# I worked on this challenge [by myself, with: ]
+# I worked on this challenge [with: Raj V. ]
 
-# I spent [] hours on this challenge.
+# I spent [2.5] hours on this challenge.
 
 
 # Complete each step below according to the challenge directions and
@@ -23,7 +23,8 @@ class Array
   x.times do
   self << value
     value = self
-  end# I want to add the value x number of times to the array
+  end
+  # I want to add the value x number of times to the array
 
   self
   end
