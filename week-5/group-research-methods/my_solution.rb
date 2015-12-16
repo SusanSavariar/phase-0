@@ -50,12 +50,22 @@ end
 
 
 # Person 4
-def my_array_deletion_method!(source, thing_to_delete)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+def my_array_deletion_method!(source)
+  def my_array_splitting_method(source)
+  new_array = []
+  new_array << source.select { |i| i.is_a? Integer }
+  new_array << source.select { |i| i.is_a? String }
+  new_array
 end
 
 def my_hash_deletion_method!(source, thing_to_delete)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  def my_hash_splitting_method(source, age)
+  new_array = []
+
+  new_array << source.select { |k, v| v <= age }.to_a
+  new_array << source.select { |k, v| v > age }.to_a
+
+  new_array
 end
 
 # Identify and describe the Ruby method(s) you implemented.
