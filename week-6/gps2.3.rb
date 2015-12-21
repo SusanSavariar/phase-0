@@ -2,7 +2,7 @@
 # 1) Susan Savariar
 # 2)
 
-# We spent [1.5] hours on this challenge.
+# We spent [2] hours on this challenge.
 
 # Bakery Serving Size portion calculator.
 
@@ -60,4 +60,45 @@ p serving_size_calc("cookie", 30)
 # p serving_size_calc("caramel", 5)
 # p serving_size_calc("THIS IS AN ERROR", 5)
 
+#Refactored
+
+def serving_size_calc(item_to_make, num_of_ingredients)
+  library = {"cookie" => 1, "cake" =>  5, "pie" => 7}
+
+  raise ArgumentError.new("#{item_to_make} is not a valid input") unless library.has_key?(item_to_make)
+
+  serving_size = library[item_to_make]
+  remaining_ingredients = num_of_ingredients % serving_size
+
+  output = "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}"
+
+  if remaining_ingredients > 0
+    output + ", you have #{remaining_ingredients} leftover ingredients. Suggested baking items: TODO: MAKE THIS FEATURE"
+  else
+    output
+  end
+
+#   remaining_ingredients == 0 ? output : output + ", you have #{remaining_ingredients} leftover ingredients. Suggested baking items: TODO: MAKE THIS FEATURE"
+
+  # case remaining_ingredients
+  # when 0
+  #   return "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}"
+  # else
+  #   return "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}, you have #{remaining_ingredients} leftover ingredients. Suggested baking items: TODO: MAKE THIS FEATURE"
+  # end
+end
+
+
 #  Reflection
+
+# What did you learn about making code readable by working on this challenge?
+# I learned the importance of naming variables correctly. The variable method name did not make sense for the method's purpose.
+
+# Did you learn any new methods? What did you learn about them?
+# I learned the .values_at method which I did not know. It creates an array of hash values.
+
+# What did you learn about accessing data in hashes?
+# hash[key] is a really efficient way to access hash data. .values_at does not seem very efficient.
+
+# What concepts were solidified when working through this challenge?
+#I think that the process of refactoring code was solidified a bit more for me through this challenge.
