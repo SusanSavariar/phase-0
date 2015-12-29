@@ -7,6 +7,7 @@ array = [[1,2], ["inner", ["eagle", "par", ["FORE", "hook"]]]]
 # attempts:
 # ============================================================
 
+p array [1][1][2][0]
 
 
 # ============================================================
@@ -18,7 +19,7 @@ hash = {outer: {inner: {"almost" => {3 => "congrats!"}}}}
 
 # attempts:
 # ============================================================
-
+p hash[:outer][:inner] ["almost"] [3]
 
 
 # ============================================================
@@ -91,3 +92,14 @@ number_array = [5, [10, 15], [20,25,30], 35]
 # Bonus:
 
 startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
+
+# Reflection
+
+#What are some general rules you can apply to nested arrays?
+#Think of the statement that access one element as the name of the array itself. Then add the index number in brackets afterward.
+
+#What are some ways you can iterate over nested arrays?
+kind_of or is_a statements
+
+#Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+#I am stuck on this challenge.
