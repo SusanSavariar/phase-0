@@ -21,7 +21,11 @@ for (var counter = 0; counter < 7; counter += 1){
 // Functions
 
 // Complete the `minimum` exercise.
-
+function min(num1, num2){
+	if (num1 < num2)
+		return num1;
+	else
+		return num2;
 
 
 // Data Structures: Objects and Arrays
