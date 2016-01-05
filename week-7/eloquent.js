@@ -30,5 +30,5 @@ function min(num1, num2){
 
 // Data Structures: Objects and Arrays
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
-var me = {name: "Susan", age: "25", quirk: "I am a triplet"};
+var me = {name: "Susan", age: "25", foods: "chocolate", "cheetos", "chipotle", quirk: "I am a triplet"};
 console.log(me["quirk"])
