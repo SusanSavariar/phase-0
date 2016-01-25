@@ -60,3 +60,10 @@ console.log(separateComma(1569743))
 
 
 // Reflection
+Reflection
+// What was it like to approach the problem from the perspective of JavaScript? Did you approach the problem differently?
+
+//  It is more difficult for me to transition to Javascript because it is missing a lot of the methods that Ruby has. 
+//  What did you learn about iterating over arrays in JavaScript?
+// It is similar but does not have a #map function. 
+
