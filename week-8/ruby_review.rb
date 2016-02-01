@@ -26,7 +26,7 @@ assert { name == "billybob" }
 class CreditCard
 
   def initialize(card_num)
-    raise ArgumentError.new("This is not a valid 16 digit credit card number") if card_num.to_s.size != 16
+    raise ArgumentError.new("This is not a valid credit card number") if card_num.to_s.size != 16
     @card_array = card_num.to_s.split("")
   end
 
@@ -36,8 +36,7 @@ class CreditCard
  
   def sum_values
     @sum = 0
-    @card_array.each {|v| v > 9 ? @sum += 1+(v % 10): @sum += v}
-    @sum
+    @card_array.each {|v| v > 9 ? @sum += 1+(v % 10): @sum += v
   end
   
   def check_card
