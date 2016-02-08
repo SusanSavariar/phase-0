@@ -23,11 +23,8 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
-for (var i in students) {
-  gradebook[students[i]] = {};
-  gradebook[students[i]]['testScores'] = scores[i];
-
-//Having internet issues..will come back to finish.
+var gradebook = new object ();
+gradebook[students[i]] = new
 
 
 
