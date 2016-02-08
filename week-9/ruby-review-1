@@ -1,1 +1,90 @@
+# Create a Car Class from User Stories
+
+
+# I worked on this challenge [by myself, with: ].
+
+
+# 2. Pseudocode
+#Define CLASS car that has a model and a color
+#Define travel function that takes a distance
+#Set speed to reader attribution
+#Define left-or-right function
+#Define an accelerate or deccelerate function, and allow it to take a certain speed.
+#Log total distance
+#Define function to stop the car
+#Output latest action
+
+# 3. Initial Solution
+class Car
+  def initialize(model, color)
+    @model = model
+    @color = color
+    @pizza = []
+    @speed = 0
+    @total_distance = 0
+  end
+
+  attr_reader:speed, :pizza
+
+  def travel(distance)
+    @distance = distance
+    @total_distance += @distance
+    puts "You are now traveling #{@distance}. You have traveled a total of #{@total_distance}."
+  end
+
+  def direction(left_or_right)
+    @left_or_right = left_or_right
+    puts "You turned #{@left_or_right}."
+  end
+
+  def acc_dec(speed)
+    @speed = speed
+    puts "Your car is now traveling at #{@speed}mph."
+  end
+
+  def stop_or_go
+    @speed = 0
+    puts "Car stopped."
+  end
+
+  def add_pizza(pizza)
+    @pizza << pizza
+  end
+end
+
+class Pizza
+  def initialize(type)
+    @type = type
+    @slices = 8
+  end
+
+  attr_reader:type
+
+  def eat(slices)
+    @slices -= slices
+    puts "You just ate #{slices} slices. Your pizza now has #{@slices} left."
+  end
+end
+
+# 4. Refactored Solution
+# N/A
+
+
+
+
+
+# 1. DRIVER TESTS GO BELOW THIS LINE
+new_car = Car.new("toyota camry", "jungle green")
+new_car.travel(10)
+new_car.travel(10)
+new_car.direction("left")
+new_car.direction("right")
+new_car.acc_dec(30)
+new_car.acc_dec(45)
+new_car.stop_or_go
+new_pizza = Pizza.new("pepperoni")
+new_pizza2 = Pizza.new("cheese")
+new_car.add_pizza(new_pizza)
+new_car.add_pizza(new_pizza2)
+puts new_car.pizza[0].type
 
