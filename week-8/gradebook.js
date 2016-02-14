@@ -23,8 +23,30 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
+<<<<<<< HEAD
 var gradebook = new object ();
 gradebook[students[i]] = new
+=======
+var gradebook = {};
+
+for(var x = 0; x < students.length; x += 1) {
+  gradebook[students[x]] = {};
+  gradebook[students[x]]["testScores"] = scores[x]
+};
+
+gradebook.addScore = function addScore(name, score) {
+  gradebook[name]["testScores"].push(score)
+};
+
+var average = function (array) {
+  return array.reduce(function (sum, number) {return sum+number})/array.length;
+}
+
+gradebook.getAverage = function getAverage(name) {
+  return average(gradebook[name]["testScores"])
+};
+
+>>>>>>> master
 
 
 

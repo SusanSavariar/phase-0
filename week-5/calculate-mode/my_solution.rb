@@ -49,5 +49,5 @@ Were you more successful breaking this problem down into implementable pseudocod
 What issues/successes did you run into when translating your pseudocode to code?
 -Putting the objects into the hash was easy. But sorting the hash and finding the value/key pair was challenging.
 What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
--the methods we used were .values to select the values of a hash and .max to determine the maximum key/value pair.
+-the method we used was .max to determine the maximum key/value pair.
 =end
